@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+<title>CSS grid layout</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="header">
+    <h1>Image Grid</h1>
+    <p>click on the botton to change the grid view</p>
+    <div class="icons">
+        <i class="fa fa-square" onclick="full()"></i>
+        <i class="fa fa-th-large" onclick="twoColumn()"></i>
+        <i class="fa fa-th" onclick="fourClumn()"></i>
+
+    </div>
+</div>
+
+<div class="row">
+    <div id="column1">
+        <img src="imeg/2.jpg">
+
+        <img src="imeg/3.jpg">
+        <img src="imeg/4.jpg">
+       
+        <img src="imeg/boy.png">
+        <img src="imeg/camera.jpg">
+        <img src="imeg/ai.jpg">
+        <img src="imeg/aj.jpg">
+        <img src="imeg/ak.jpeg">
+        <img src="imeg/ak.jpg">
+        <img src="imeg/al.jpg">
+        <img src="imeg/am.jpg">
+        <img src="imeg/an.jpg">
+        <img src="imeg/ao.jpg">
+        <img src="imeg/ap.jpg">
+        <img src="imeg/aq.jpg">
+        <img src="imeg/as.jpg">
+        <img src="imeg/at.jpg">
+        <img src="imeg/aw.jpg">
+        <img src="imeg/ax.jpg">
+        <img src="imeg/ay.jpg">
+        <img src="imeg/az.jpg">
+        <img src="imeg/l.jpg">
+        <img src="imeg/m.jpg">
+        <img src="imeg/n.jpeg">
+        <img src="imeg/o.jpg">
+        <img src="imeg/q.jpg">
+        <img src="imeg/r.jpg">
+        <img src="imeg/s.jpg">  
+        <img src="imeg/l.jpg">
+        
+    </div>
+    <div id="column2">
+        <img src="imeg/1.jpg">
+        <img src="imeg/2.jpg">
+        <img src="imeg/3.jpg">
+        <img src="imeg/4.jpg">
+        <img src="imeg/cat.jpg">
+        <img src="imeg/boy.png">
+        <img src="imeg/camera.jpg">
+        <img src="imeg/logo.jpg">
+        <img src="imeg/1.jpg">
+        <img src="imeg/ba.jpg">
+        <img src="imeg/s.jpg">
+        <img src="imeg/t.jpg">
+        <img src="imeg/w.jpg">
+        <img src="imeg/x.jpg">
+        <img src="imeg/y.jpg">
+        <img src="imeg/z.jpg">
+        <img src="imeg/ab.jpg">
+        <img src="imeg/ac.jpg">
+        <img src="imeg/ae.jpg">
+        <img src="imeg/ad.jpg">
+        <img src="imeg/ab.jpg">
+        <img src="imeg/ac.jpg">
+        <img src="imeg/ae.jpg">
+        <img src="imeg/ad.jpg">
+        <img src="imeg/af.jpg">
+        <img src="imeg/ag.jpg">
+        <img src="imeg/o.jpg">
+        <img src="imeg/5.jpg">
+        <img src="imeg/af.jpg">
+        <img src="imeg/ag.jpg">
+        <img src="imeg/ah.jpg">
+        
+        <img src="imeg/ad.jpg">
+        <img src="imeg/af.jpg">
+        <img src="imeg/ag.jpg">
+        <img src="imeg/ah.jpg">
+        <img src="imeg/camera.jpg">
+        <img src="imeg/s.jpg">
+       
+    </div>
+    <div id="column3">
+        <img src="imeg/1.jpg">
+        <img src="imeg/2.jpg">
+        <img src="imeg/3.jpg">
+        <img src="imeg/4.jpg">
+        <img src="imeg/cat.jpg">
+        <img src="imeg/boy.png">
+        <img src="imeg/camera.jpg">
+        <img src="imeg/logo.jpg">
+        <img src="imeg/1.jpg">
+        <img src="imeg/bt.jpg">
+        <img src="imeg/bw.jpg">
+        <img src="imeg/bx.jpg">
+        <img src="imeg/by.jpg">
+        <img src="imeg/bz.jpg">
+        <img src="imeg/af.jpg">
+        <img src="imeg/f9.jpg">
+        <img src="imeg/ae.jpg">
+        <img src="imeg/11.jpg">
+        <img src="imeg/12.jpg">
+        <img src="imeg/p.jpg">
+        <img src="imeg/camera.jpg">
+        <img src="imeg/t.jpg">
+        <img src="imeg/w.jpg">
+        <img src="imeg/x.jpg">
+        <img src="imeg/y.jpg">
+        <img src="imeg/z.jpg"> <img src="imeg/ag.jpg">
+        <img src="imeg/ah.jpg">
+        <img src="imeg/t.jpg">
+        <img src="imeg/w.jpg">
+        <img src="imeg/x.jpg">
+        <img src="imeg/y.jpg">
+        <img src="imeg/z.jpg">
+        <img src="imeg/ab.jpg">
+        <img src="imeg/ac.jpg">
+        <img src="imeg/ae.jpg">
+        
+        <img src="imeg/l.jpg">
+    </div>
+    <div id="column4">
+        <img src="imeg/1.jpg">
+        <img src="imeg/2.jpg">
+        <img src="imeg/3.jpg">
+        <img src="imeg/4.jpg">
+        <img src="imeg/cat.jpg">
+        <img src="imeg/boy.png">
+        <img src="imeg/camera.jpg">
+      <img src="imeg/ag.jpg">
+        <img src="imeg/ah.jpg">
+        
+        
+       
+       
+
+    </div>
+    </div>
+<script>
+    function full(){
+        document.getElementById("column1").style.width="100%";
+        document.getElementById("column2").style.width="100%";
+        document.getElementById("column3").style.width="100%";
+        document.getElementById("column4").style.width="100%";
+        
+      
+    }
+    function twoColumn(){
+        document.getElementById("column1").style.width="50%";
+        document.getElementById("column2").style.width="50%";
+        document.getElementById("column3").style.width="50%";
+        document.getElementById("column4").style.width="50%";
+        
+      
+    }
+    function fourClumn(){
+        document.getElementById("column1").style.width="25%";
+        document.getElementById("column2").style.width="25%";
+        document.getElementById("column3").style.width="25%";
+        document.getElementById("column4").style.width="25%";
+        
+      
+    }
+</script>
+
+
+    
+</body>
+
+</html>
